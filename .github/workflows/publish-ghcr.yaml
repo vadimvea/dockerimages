@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build and push the image
         run: |
-          docker login --username vadimvea --password ${{ secrets.GH_PAT }} ghcr.io
+          docker login --username vadimvea --password ${{  }} ghcr.io
           docker build . --tag ghcr.io/vadimvea/house-price:latest
           docker push ghcr.io/vadimvea/house-price:latest
